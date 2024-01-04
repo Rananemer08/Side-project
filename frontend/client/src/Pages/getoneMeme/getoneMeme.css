@@ -1,0 +1,65 @@
+*{
+    background-color: #0d6efd;
+}
+.product-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title-meme {
+    text-align: center;
+    background-color:#0d6efd ;
+  }
+  
+  .meme-list {
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .meme-one{
+    text-align: center; 
+  }
+  .meme-card {
+    
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .meme-card:hover {
+    transform: scale(1.05);
+  }
+  .meme-one{
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    
+  }
+  
+  .meme-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .caption {
+    padding: 10px;
+    background-color: #f8f8f8;
+   
+  }
+  
+  .caption h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  

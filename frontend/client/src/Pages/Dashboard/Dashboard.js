@@ -48,7 +48,7 @@ function Dashboard() {
                             memes.map((meme, index) => (
                                 <tr key={index}>
                                     <td>{meme.id}</td>
-                                    <td><img src={`http://localhost:4000/${meme.image}`}  /></td>
+                                    <td><img src={`http://localhost:8100/${meme.image}`}  /></td>
                                     <td>{meme.textCaption}</td>
                                     <td> 
                                     <Link to={`/read/${meme.id}`} className='btn btn-sm btn-info'>Read</Link>

@@ -28,7 +28,7 @@ function ReadMemes() {
         <div className='d-flex vh-100 bg-primary justify-content-center align-items-center'>
             <div className='w-50 bg-white rounded p-3'>
                 <div className='p-8'> 
-                <h2>Meme Detail</h2>
+                <h2>Meme Details</h2>
                 {meme && meme.id && (
                     <>
                         <h2>{meme.id}</h2>
