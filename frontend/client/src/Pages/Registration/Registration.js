@@ -10,12 +10,14 @@ const Registration = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [userType, setUserType] = useState(''); 
+    
     const navigate = useNavigate();
   
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const response = await axios.post('http://localhost:8100/api/users', {
+        const endpoint = userType === 'Creator' ? '/register/creator' : '/register/user';
+        const response = await axios.post(`http://localhost:8100/api/users${endpoint}`, {
           username,
           first_name: firstName,
           last_name: lastName,
@@ -24,16 +26,13 @@ const Registration = () => {
           userType,
         });
   
-        // Check userType and navigate accordingly
-        if (userType === 'Creator') {
-          navigate('/');
-        } else if (userType === 'Viewer') {
-          navigate('/memespage');
-        }
+        navigate('/login'); // Navigate to login page after successful registration
       } catch (error) {
         console.error('Registration failed:', error);
+        
       }
     };
+    
   
     return (
       <div className='regBack'>

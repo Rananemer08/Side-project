@@ -9,7 +9,7 @@ import EditDashboard from "./Pages/EditDashboard/EditDashboard";
 import Memespage from "./Pages/Memespage/Memespage";
 import GetOneMeme from "./Pages/getoneMeme/getoneMeme";
 import Registration from "./Pages/Registration/Registration"
-
+import Login from "./Pages/Login/Login";
 import Home from "./Pages/Home/Home";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         <Route path="/getOneMeme/:id" element={<GetOneMeme />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>  
     </div>
